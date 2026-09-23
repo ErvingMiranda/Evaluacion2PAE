@@ -13,7 +13,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.uam.pae.evaluacion2fx.Models.Cliente;
-import org.uam.pae.evaluacion2fx.Models.ClienteRepository;
+import org.uam.pae.evaluacion2fx.Repository.ClienteRepository;
 
 import java.io.File;
 import java.io.IOException;

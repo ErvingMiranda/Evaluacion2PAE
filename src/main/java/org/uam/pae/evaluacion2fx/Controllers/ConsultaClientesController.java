@@ -12,7 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.uam.pae.evaluacion2fx.Models.Cliente;
-import org.uam.pae.evaluacion2fx.Models.ClienteRepository;
+import org.uam.pae.evaluacion2fx.Repository.ClienteRepository;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;

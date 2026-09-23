@@ -1,7 +1,8 @@
-package org.uam.pae.evaluacion2fx.Models;
+package org.uam.pae.evaluacion2fx.Repository;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.uam.pae.evaluacion2fx.Models.Cliente;
 
 // Almacén en memoria compartido entre ventanas (Registro -> Consulta)
 public class ClienteRepository {
