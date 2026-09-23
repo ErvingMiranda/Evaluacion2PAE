@@ -3,15 +3,20 @@ package org.uam.pae.evaluacion2fx.Controllers;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.uam.pae.evaluacion2fx.Models.Cliente;
 import org.uam.pae.evaluacion2fx.Models.ClienteRepository;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -85,6 +90,29 @@ public class RegistroController {
         limpiarFormulario();
     }
 
+
+    @FXML
+    private void onConsultar(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/org/uam/pae/evaluacion2fx/consulta-clientes-view.fxml"));
+        try {
+            Parent root = loader.load();
+
+            // Paso de datos entre vistas: los clientes capturados aquí se envían a la consulta
+            ConsultaClientesController controlador = loader.getController();
+            controlador.cargarClientes(ClienteRepository.get().getClientes());
+
+            Stage stage = new Stage();
+            stage.setTitle("Consulta de Clientes");
+            stage.setScene(new Scene(root));
+            stage.initOwner(obtenerStage());
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.show();
+        } catch (IOException e) {
+            mostrarAlerta(Alert.AlertType.ERROR, "Error",
+                    "No se pudo abrir la consulta de clientes. " + e.getMessage());
+        }
+    }
 
     @FXML
     private void onLimpiar(ActionEvent event) {

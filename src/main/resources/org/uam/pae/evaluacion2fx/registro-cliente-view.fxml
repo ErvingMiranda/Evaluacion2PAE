@@ -58,6 +58,7 @@
       <Button layoutX="32.0" layoutY="309.0" mnemonicParsing="false" onAction="#onGuardar" styleClass="skyblue" text="Guardar" />
       <Button layoutX="150.0" layoutY="309.0" mnemonicParsing="false" onAction="#onLimpiar" text="Limpiar" />
       <Button layoutX="267.0" layoutY="309.0" mnemonicParsing="false" onAction="#onCancelar" text="Cancelar" />
+      <Button layoutX="384.0" layoutY="309.0" mnemonicParsing="false" onAction="#onConsultar" prefWidth="160.0" text="Consultar clientes" />
       <ImageView fx:id="imgFoto" fitHeight="150.0" fitWidth="200.0" layoutX="641.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
       <Button layoutX="659.0" layoutY="219.0" mnemonicParsing="false" onAction="#onSeleccionarFoto" prefHeight="26.0" prefWidth="163.0" text="Seleccionar Foto.." />
    </children>

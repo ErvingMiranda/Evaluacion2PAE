@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uam.pae.evaluacion2fx.Controllers.ConsultaClientesController">
+   <children>
+      <VBox alignment="CENTER" spacing="12.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label text="Consulta de Clientes">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font></Label>
+            <Label text="Seleccione un cliente para ver su información">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <HBox spacing="15.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tblConsulta" prefHeight="330.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="colNombreCliente" prefWidth="75.0" text="Nombre Completo" />
+                      <TableColumn fx:id="colTipoCliente" prefWidth="75.0" text="Tipo de Cliente" />
+                        <TableColumn fx:id="colCiudadCliente" prefWidth="112.0" text="Ciudad" />
+                        <TableColumn fx:id="colFechaNac" prefWidth="144.00003051757812" text="Fecha de Nacimiento" />
+                        <TableColumn fx:id="colTipoSol" prefWidth="75.0" text="Tipo de Solicitud" />
+                        <TableColumn fx:id="colInteresCliente" prefWidth="75.0" text="Servicio de Interés" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <VBox prefWidth="250.0" spacing="8.0">
+                     <children>
+                        <Label text="Detalle del cliente">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgFoto" fitHeight="130.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+                        <GridPane hgap="8.0" vgap="6.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="90.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="150.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Nombre:" />
+                              <Label fx:id="lblNombre" text="-" wrapText="true" GridPane.columnIndex="1" />
+                              <Label text="Tipo:" GridPane.rowIndex="1" />
+                              <Label fx:id="lblTipoCliente" text="-" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Ciudad:" GridPane.rowIndex="2" />
+                              <Label fx:id="lblCiudad" text="-" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Nacimiento:" GridPane.rowIndex="3" />
+                              <Label fx:id="lblFechaNac" text="-" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="Solicitud:" GridPane.rowIndex="4" />
+                              <Label fx:id="lblTipoSolicitud" text="-" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label text="Servicios:" GridPane.rowIndex="5" />
+                              <Label fx:id="lblServicios" text="-" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label fx:id="lblTotal" text="Clientes registrados: 0" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#onActualizar" prefWidth="110.0" text="Actualizar" />
+                  <Button mnemonicParsing="false" onAction="#onCerrar" prefWidth="90.0" text="Cerrar" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
