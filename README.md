@@ -8,7 +8,7 @@ Trabajo elaborado para la asignatura **Programación de Aplicaciones de Escritor
 
 ### Integrantes
 
-- Victor Mateo Alcocer Lopez
-- Andre Marcel Guido Castrillo
+- Víctor Mateo Alcócer López
+- André Marcel Guido Castrillo
 - Erving Josué Miranda Ríos
-- Moises Abraham Valle Alonso
+- Moisés Abraham Valle Alonso
