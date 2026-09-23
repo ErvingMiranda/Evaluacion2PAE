@@ -1,9 +1,14 @@
-# Caso práctico | Eventos, navegación y paso de datos
+# Evaluación 2
 
-## Victor Mateo Alcocer Lopez
+## Caso práctico | Eventos, navegación y paso de datos
 
-## Andre Marcel Guido Castrillo
+Trabajo elaborado para la asignatura **Programación de Aplicaciones de Escritorio**
 
-## Erving Josué Miranda Ríos
+**Profesor:** Freddy Luis López Barrios
 
-## Moises Abraham Valle Alonso
+### Integrantes
+
+- Victor Mateo Alcocer Lopez
+- Andre Marcel Guido Castrillo
+- Erving Josué Miranda Ríos
+- Moises Abraham Valle Alonso
