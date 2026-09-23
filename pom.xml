@@ -59,7 +59,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.uam.pae.evaluacion2fx/org.uam.pae.evaluacion2fx.HelloApplication</mainClass>
+                            <mainClass>org.uam.pae.evaluacion2fx/org.uam.pae.evaluacion2fx.Launcher</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
